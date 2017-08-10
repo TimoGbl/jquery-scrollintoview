@@ -129,6 +129,9 @@
                 // vertical scroll
                 if (options.direction.y === true) {
 
+                    // Timo edit because of position fixed nav bar in homee app
+                    rel.top = rel.top - 60;
+
                     if (rel.top < 0) {
                         animProperties.scrollTop = Math.max(0, dim.s.scroll.top + rel.top - options.viewPadding.y);
                     } else if (rel.top > 0 && rel.bottom < 0) {
